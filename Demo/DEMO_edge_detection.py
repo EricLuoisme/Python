@@ -180,11 +180,27 @@ class EdgeDetection(object):  # FrogEyes
 
 
 def queue_img_put(q, name, pwd, ip, channel=1):
-    cap = cv2.VideoCapture("rtsp://%s:%s@%s//Streaming/Channels/%d" % (name, pwd, ip, channel))
-    while True:
-        is_opened, frame = cap.read()
-        q.put(frame) if is_opened else None
-        q.get() if q.qsize() > 1 else None
+    # cap = cv2.VideoCapture("rtsp://%s:%s@%s//Streaming/Channels/%d" % (name, pwd, ip, channel))
+    # cap = cv2.VideoCapture(0)
+    # while True:
+    #     is_opened, frame = cap.read()
+    #     q.put(frame) if is_opened else None
+    #     q.get() if q.qsize() > 1 else None
+
+    cap = cv2.VideoCapture(0)
+    while (True):
+        # Capture frame-by-frame
+        ret, frame = cap.read()
+        # Our operations on the frame come here
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        # Display the resulting frame
+        cv2.imshow('frame', gray)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+    # When everything done, release the capture
+    cap.release()
+    # cv2.destroyAllWindows()
+
 
 
 def queue_img_get(q, window_name):
