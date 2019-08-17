@@ -38,18 +38,27 @@ closed = cv2.dilate(closed, None, iterations=4)
 contours, hierarchy= cv2.findContours(closed.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 cnt = sorted(contours, key=cv2.contourArea, reverse=True)[0]
 
-epsilon = 0.0001*cv2.arcLength(cnt,True)
-approx = cv2.approxPolyDP(cnt,epsilon,True)
-cv2.drawContours(img, [approx], -1, (0, 255, 0), 3)
+# epsilon = 0.0001*cv2.arcLength(cnt,True)
+# approx = cv2.approxPolyDP(cnt,epsilon,True)
+# cv2.drawContours(img, [approx], -1, (0, 255, 0), 3)
 
-# hull = cv2.convexHull(cnt)
+hull = cv2.convexHull(cnt)
 # cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
 
+mask = np.zeros_like(img)
+cv2.drawContours(mask, [hull], -1, (0, 255, 0), 3)
+out = img.copy()  # Extract out the object and place into output image
+out[mask == 255] = img[mask == 255]
 
+# crop
+# (y, x) = np.where(mask == 255)
+y,x,b = np.where(mask == 255)
+(topy, topx) = (np.min(y), np.min(x))
+(bottomy, bottomx) = (np.max(y), np.max(x))
+out = out[topy:bottomy + 1, topx:bottomx + 1]
 
-cv2.imshow("contours", img)
-cv2.waitKey(0)
-
+# cv2.imshow("contours", out)
+# cv2.waitKey(0)
 
 
 

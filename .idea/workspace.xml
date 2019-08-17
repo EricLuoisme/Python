@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61a87e0c-e2d6-41a8-ba44-f310ee986858" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Demo/Camera_Connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/Contour_Detect_Function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/FFF03A_0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/FFF03A_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/FFF_compressed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/Testing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/contoursImage2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/tt1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="61a87e0c-e2d6-41a8-ba44-f310ee986858" name="Default" comment="So many Stuff">
+      <change afterPath="$PROJECT_DIR$/Demo/Contour_Cutting_Function.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/Red_Effect_Testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/WIN_20190817_22_55_14_Pro.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/DEMO_edge_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/DEMO_edge_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/Testing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,12 +42,12 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\ANU_study\Python\Demo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ANU_study\Python\Demo" />
       <recent name="C:\ANU_study\Python" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ANU_study\Python\Demo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -69,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Camera_Connection">
+  <component name="RunManager" selected="Python.Red_Effect_Testing">
     <configuration name="Camera_Connection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,6 +105,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Red_Effect_Testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo/Red_Effect_Testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,8 +149,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Camera_Connection" />
+        <item itemvalue="Python.Red_Effect_Testing" />
         <item itemvalue="Python.Testing" />
+        <item itemvalue="Python.Camera_Connection" />
         <item itemvalue="Python.DEMO_edge_detection" />
       </list>
     </recent_temporary>
@@ -152,6 +167,14 @@
       <option name="presentableId" value="Default" />
       <updated>1530531619337</updated>
     </task>
+    <task id="LOCAL-00001" summary="So many Stuff">
+      <created>1565944140368</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565944140368</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,5 +192,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="So many Stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="So many Stuff" />
   </component>
 </project>
