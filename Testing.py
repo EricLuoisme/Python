@@ -45,20 +45,24 @@ cnt = sorted(contours, key=cv2.contourArea, reverse=True)[0]
 hull = cv2.convexHull(cnt)
 # cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
 
-mask = np.zeros_like(img)
-cv2.drawContours(mask, [hull], -1, (0, 255, 0), 3)
-out = img.copy()  # Extract out the object and place into output image
-out[mask == 255] = img[mask == 255]
 
-# crop
-# (y, x) = np.where(mask == 255)
-y,x,b = np.where(mask == 255)
-(topy, topx) = (np.min(y), np.min(x))
-(bottomy, bottomx) = (np.max(y), np.max(x))
-out = out[topy:bottomy + 1, topx:bottomx + 1]
+mask = np.zeros(img.shape[:2],np.uint8)
+cv2.drawContours(mask, [hull], -1, 255, -1)
+dst = cv2.bitwise_and(img, img, mask=mask)
 
-# cv2.imshow("contours", out)
-# cv2.waitKey(0)
+cv2.imshow('contours', dst)
+cv2.waitKey(0)
+
+
+# # crop
+# # (y, x) = np.where(mask == 255)
+# y,x,b = np.where(mask == 255)
+# (topy, topx) = (np.min(y), np.min(x))
+# (bottomy, bottomx) = (np.max(y), np.max(x))
+# out = out[topy:bottomy + 1, topx:bottomx + 1]
+
+cv2.imshow("contours", out)
+cv2.waitKey(0)
 
 
 

@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61a87e0c-e2d6-41a8-ba44-f310ee986858" name="Default" comment="So many Stuff">
-      <change afterPath="$PROJECT_DIR$/Demo/Contour_Cutting_Function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/Red_Effect_Testing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/WIN_20190817_22_55_14_Pro.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contour_Detect_and_Cut.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thread_Detection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/Testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/Camera_Connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Camera_Connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/Contour_Cutting_Function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contour_Cutting_Function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/Contour_Detect_Function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contour_Detect_Function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/FFF03A_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FFF03A_0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/FFF03A_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FFF03A_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/FFF_compressed.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FFF_compressed.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/Red_Effect_Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/Red_Effect_Testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,12 +48,13 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ANU_study\Python" />
+      <recent name="C:\ANU_study\Python\Demo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ANU_study\Python\Demo" />
       <recent name="C:\ANU_study\Python" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\ANU_study\Python\Demo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -62,7 +69,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Red_Effect_Testing">
+  <component name="RunManager" selected="Python.Camera_Connection (1)">
+    <configuration name="Camera_Connection (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Camera_Connection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Camera_Connection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,28 +103,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo/Camera_Connection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="DEMO_edge_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Demo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo/DEMO_edge_detection.py" />
+      <option name="SCRIPT_NAME" value="C:\ANU_study\Python\Camera_Connection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +133,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Testing (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,11 +141,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo/Testing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Thread_Detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Thread_Detection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,10 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Camera_Connection (1)" />
         <item itemvalue="Python.Red_Effect_Testing" />
-        <item itemvalue="Python.Testing" />
+        <item itemvalue="Python.Testing (1)" />
+        <item itemvalue="Python.Thread_Detection" />
         <item itemvalue="Python.Camera_Connection" />
-        <item itemvalue="Python.DEMO_edge_detection" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565944140368</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="So many Stuff">
+      <created>1566047511269</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566047511269</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

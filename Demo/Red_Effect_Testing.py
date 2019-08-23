@@ -4,7 +4,7 @@ import time
 
 # Creating an VideoCapture object
 # This will be used for image acquisition later in the code.
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(2)
 
 # We give some time for the camera to setup
 time.sleep(3)
