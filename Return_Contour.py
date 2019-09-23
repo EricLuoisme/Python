@@ -1,7 +1,6 @@
-
 import cv2
 
-def Contour_Detect(img):
+def Return_Contour(img):
 
     # conver colored image into gray one
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -19,7 +18,7 @@ def Contour_Detect(img):
     (_, thresh) = cv2.threshold(blurred, 90, 255, cv2.THRESH_BINARY)
 
     # make the image closed
-    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (10, 10)) # (100, 100) for samples, (20,20) for videos
+    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (100, 100)) # (100, 100) for samples, (20,20) for videos
     # 20 * 20 is about how large matrix that we used to combine unconnected area together
     closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
 
@@ -29,23 +28,9 @@ def Contour_Detect(img):
 
     # draw contour
     contours, hierarchy = cv2.findContours(closed.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    if len(contours) < 2:
-        return img
+    if len(contours) > 1:
+        cnt = sorted(contours, key=cv2.contourArea, reverse=True)[0]
     else:
-        # cnt = sorted(contours, key=cv2.contourArea, reverse=True)[0]
-        # hull = cv2.convexHull(cnt)
-        # cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
+        cnt = contours
 
-        for cnt in contours:
-            # use convex to approximate the contour
-            hull = cv2.convexHull(cnt)
-            cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
-        #
-        #     # # use epsilon to approximate the contour
-        #     epsilon = 0.0001 * cv2.arcLength(cnt, True)
-        #     approx = cv2.approxPolyDP(cnt, epsilon, True)
-        #     cv2.drawContours(img, [approx], -1, (0, 255, 0), 3)
-
-
-
-        return img
+    return cnt

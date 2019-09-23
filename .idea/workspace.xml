@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61a87e0c-e2d6-41a8-ba44-f310ee986858" name="Default" comment="So many Stuff">
-      <change afterPath="$PROJECT_DIR$/Contour_Detect_and_Cut.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thread_Detection.py" afterDir="false" />
+    <list default="true" id="61a87e0c-e2d6-41a8-ba44-f310ee986858" name="Default" comment="Most Crucial Update">
+      <change afterPath="$PROJECT_DIR$/Color_Detect_Testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FFF03A_0_c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Return_Contour.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test_For_Contour_Matching.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/W_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/W_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/W_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/W_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/t1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_saving.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/white.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/Camera_Connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Camera_Connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/Contour_Cutting_Function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contour_Cutting_Function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/Contour_Detect_Function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contour_Detect_Function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/FFF03A_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FFF03A_0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/FFF03A_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FFF03A_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/FFF_compressed.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FFF_compressed.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/Red_Effect_Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/Red_Effect_Testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Camera_Connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Camera_Connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contour_Cutting_Function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contour_Cutting_Function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contour_Detect_Function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contour_Detect_Function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FFF_compressed.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FFF_compressed.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -48,13 +54,13 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ANU_study\Python" />
       <recent name="C:\ANU_study\Python\Demo" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\ANU_study\Python\Demo" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\ANU_study\Python" />
+      <recent name="C:\ANU_study\Python\Demo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -69,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Camera_Connection (1)">
+  <component name="RunManager" selected="Python.Testing (1)">
     <configuration name="Camera_Connection (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,7 +97,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Camera_Connection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Color_Detect_Testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,11 +105,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\ANU_study\Python\Camera_Connection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Color_Detect_Testing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,7 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Red_Effect_Testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Contour_Detect_Function" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,11 +126,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo/Red_Effect_Testing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Contour_Detect_Function.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_For_Contour_Matching" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test_For_Contour_Matching.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,34 +181,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Thread_Detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Thread_Detection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Camera_Connection (1)" />
-        <item itemvalue="Python.Red_Effect_Testing" />
         <item itemvalue="Python.Testing (1)" />
-        <item itemvalue="Python.Thread_Detection" />
-        <item itemvalue="Python.Camera_Connection" />
+        <item itemvalue="Python.Camera_Connection (1)" />
+        <item itemvalue="Python.Contour_Detect_Function" />
+        <item itemvalue="Python.Test_For_Contour_Matching" />
+        <item itemvalue="Python.Color_Detect_Testing" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566047511269</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Most Crucial Update">
+      <created>1566535265172</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566535265172</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +242,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="So many Stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="So many Stuff" />
+    <MESSAGE value="Most Crucial Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Most Crucial Update" />
   </component>
 </project>

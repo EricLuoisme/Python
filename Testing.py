@@ -1,14 +1,14 @@
 import numpy as np
 import cv2
 
-img = cv2.imread('FFF03A_0.jpg')
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-# save image with lower quality—smaller file size
-cv2.imwrite('FFF_compressed.jpg', img, [cv2.IMWRITE_JPEG_QUALITY, 9])
+# img = cv2.imread('FFF03A_0.PNG')
+# gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#
+# # save image with lower quality—smaller file size
+# cv2.imwrite('FFF_compressed.jpg', img, [cv2.IMWRITE_JPEG_QUALITY, 9])
 
 # read the compressed image
-img = cv2.imread('FFF_compressed.jpg')
+img = cv2.imread('w_5.jpg')
 # convert the colored image into gray one
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -25,10 +25,10 @@ blurred = cv2.blur(gradient, (20, 20))
 (_, thresh) = cv2.threshold(blurred, 90, 255, cv2.THRESH_BINARY)
 
 # make the image closed
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (100, 100))
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (50, 50))
 closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
 
-# cv2.imshow('1', closed)
+cv2.imshow('1', closed)
 
 # perform a series of erosions and dilations
 closed = cv2.erode(closed, None, iterations=4)
@@ -36,21 +36,40 @@ closed = cv2.dilate(closed, None, iterations=4)
 
 # draw contour
 contours, hierarchy= cv2.findContours(closed.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-cnt = sorted(contours, key=cv2.contourArea, reverse=True)[0]
+# cnt = sorted(contours, key=cv2.contourArea, reverse=True)[0]
 
 # epsilon = 0.0001*cv2.arcLength(cnt,True)
 # approx = cv2.approxPolyDP(cnt,epsilon,True)
 # cv2.drawContours(img, [approx], -1, (0, 255, 0), 3)
 
-hull = cv2.convexHull(cnt)
+# hull = cv2.convexHull(cnt, returnPoints=False)
+# hull = cv2.convexHull(cnt)
+# cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
+
+for cnt in contours:
+    # use convex to approximate the contour
+    hull = cv2.convexHull(cnt)
+    cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
+
+# defects = cv2.convexityDefects(cnt, hull)
+#
+# for i in range(defects.shape[0]):
+#     s,e,f,d = defects[i,0]
+#     start = tuple(cnt[s][0])
+#     end = tuple(cnt[e][0])
+#     far = tuple(cnt[f][0])
+#     cv2.line(img,start,end,[0,255,0],2)
+#     cv2.circle(img,far,5,[0,0,255],-1)
+
+# hull = cv2.convexHull(cnt)
 # cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
 
 
-mask = np.zeros(img.shape[:2],np.uint8)
-cv2.drawContours(mask, [hull], -1, 255, -1)
-dst = cv2.bitwise_and(img, img, mask=mask)
+# mask = np.zeros(img.shape[:2],np.uint8)
+# cv2.drawContours(mask, [hull], -1, 255, -1)
+# dst = cv2.bitwise_and(img, img, mask=mask)
 
-cv2.imshow('contours', dst)
+cv2.imshow('contours', img)
 cv2.waitKey(0)
 
 
@@ -61,10 +80,8 @@ cv2.waitKey(0)
 # (bottomy, bottomx) = (np.max(y), np.max(x))
 # out = out[topy:bottomy + 1, topx:bottomx + 1]
 
-cv2.imshow("contours", out)
-cv2.waitKey(0)
-
-
+# cv2.imshow("contours", out)
+# cv2.waitKey(0)
 
 # # the code below is using smallest rectangle to root out
 #

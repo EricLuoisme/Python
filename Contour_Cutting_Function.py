@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('FFF03A_0.jpg')
+img = cv2.imread('FFF03A_1.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # save image with lower quality—smaller file size
@@ -25,7 +25,7 @@ blurred = cv2.blur(gradient, (20, 20))
 (_, thresh) = cv2.threshold(blurred, 90, 255, cv2.THRESH_BINARY)
 
 # make the image closed
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (100, 100))
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (100, 100)) # (100, 100) for samples, (20,20) for videos
 closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
 
 # cv2.imshow('1', closed)
@@ -56,3 +56,6 @@ y,x,b = np.where(mask == 255)
 (topy, topx) = (np.min(y), np.min(x))
 (bottomy, bottomx) = (np.max(y), np.max(x))
 out = out[topy:bottomy + 1, topx:bottomx + 1]
+
+cv2.imshow('cut', out)
+cv2.waitKey(0)
