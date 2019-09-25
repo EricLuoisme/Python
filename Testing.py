@@ -25,7 +25,7 @@ blurred = cv2.blur(gradient, (20, 20))
 (_, thresh) = cv2.threshold(blurred, 90, 255, cv2.THRESH_BINARY)
 
 # make the image closed
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (50, 50))
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (20, 20))
 closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
 
 cv2.imshow('1', closed)
@@ -46,10 +46,19 @@ contours, hierarchy= cv2.findContours(closed.copy(), cv2.RETR_EXTERNAL, cv2.CHAI
 # hull = cv2.convexHull(cnt)
 # cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
 
+height, width, channels = img.shape
 for cnt in contours:
     # use convex to approximate the contour
-    hull = cv2.convexHull(cnt)
-    cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
+    cnt_length = cv2.arcLength(cnt, True)
+    if cnt_length > 0.5 * width or cnt_length > 0.5 * height or cnt_length < .1 * height:
+        # this should only be used for contour fitering
+        continue
+    else:
+        hull = cv2.convexHull(cnt)
+        cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
+
+print(height)
+print(width)
 
 # defects = cv2.convexityDefects(cnt, hull)
 #

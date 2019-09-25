@@ -40,19 +40,25 @@ def Contour_Detect(img):
         # cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
 
         mask = np.zeros(original_img.shape[:2], np.uint8)
+        # height, width, channels = img.shape
+
         for cnt in contours:
             # # use convex to approximate the contour
+            # cnt_length = cv2.arcLength(cnt, True)
+            # if cnt_length > 0.6 * width or cnt_length > 0.6 * height or cnt_length < 0.05 * height:
+            #     continue
+            # else:
             hull = cv2.convexHull(cnt)
             cv2.drawContours(img, [hull], -1, (0, 255, 0), 3)
+            # remove all backgrounds
+            cv2.drawContours(mask, [hull], -1, 255, -1)
 
             # # use epsilon to approximate the contour
             # epsilon = 0.0001 * cv2.arcLength(cnt, True)
             # approx = cv2.approxPolyDP(cnt, epsilon, True)
             # cv2.drawContours(img, [approx], -1, (0, 255, 0), 3)
 
-            # remove all backgrounds
 
-            cv2.drawContours(mask, [hull], -1, 255, -1)
 
         dst = cv2.bitwise_and(original_img, original_img, mask=mask)
 
