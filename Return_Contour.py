@@ -1,6 +1,6 @@
 import cv2
 
-def Return_Contour(img):
+def Return_Contour(img, compare=False):
 
     # conver colored image into gray one
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -18,8 +18,10 @@ def Return_Contour(img):
     (_, thresh) = cv2.threshold(blurred, 90, 255, cv2.THRESH_BINARY)
 
     # make the image closed
-    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (100, 100)) # (100, 100) for samples, (20,20) for videos
-    # 20 * 20 is about how large matrix that we used to combine unconnected area together
+    if compare == True:
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
+    else:
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (20, 20))
     closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
 
     # perform a series of erosions and dilations
@@ -29,8 +31,6 @@ def Return_Contour(img):
     # draw contour
     contours, hierarchy = cv2.findContours(closed.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     if len(contours) > 1:
-        cnt = sorted(contours, key=cv2.contourArea, reverse=True)[0]
+        return sorted(contours, key=cv2.contourArea, reverse=True)[0], False
     else:
-        cnt = contours
-
-    return cnt
+        return contours, True

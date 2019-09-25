@@ -17,7 +17,7 @@ if __name__=='__main__':
     scaling_factor = 0.5
 
     # Iterate until the user presses ESC key
-    while True:0
+    while True:
         frame = get_frame(cap, scaling_factor)
 
         # Convert the HSV colorspace

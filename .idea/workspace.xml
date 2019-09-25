@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61a87e0c-e2d6-41a8-ba44-f310ee986858" name="Default" comment="Most Crucial Update">
+      <change afterPath="$PROJECT_DIR$/W_1_compressed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/W_compare.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/W_compare_compressed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/W_compare_compressed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/W_use.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/W_use_compressed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/octagon_standard_contour.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contour_Detect_and_Cut.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contour_Detect_and_Cut.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Color_Detect_Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Color_Detect_Testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Return_Contour.py" beforeDir="false" afterPath="$PROJECT_DIR$/Return_Contour.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_For_Contour_Matching.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_For_Contour_Matching.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_saving.npy" beforeDir="false" afterPath="$PROJECT_DIR$/test_saving.npy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +50,11 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\ANU_study\Python" />
       <recent name="C:\ANU_study\Python\Demo" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ANU_study\Python" />
       <recent name="C:\ANU_study\Python\Demo" />
     </key>
@@ -61,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Camera_Connection (1)">
+  <component name="RunManager" selected="Python.Test_For_Contour_Matching">
     <configuration name="Camera_Connection (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,27 +93,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Contour_Detect_Function" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Contour_Detect_Function.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Contour_Detect_and_Cut" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,6 +106,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Contour_Detect_and_Cut.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Return_Contour" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Return_Contour.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Test_For_Contour_Matching" />
+        <item itemvalue="Python.Testing (1)" />
+        <item itemvalue="Python.Return_Contour" />
         <item itemvalue="Python.Camera_Connection (1)" />
         <item itemvalue="Python.Contour_Detect_and_Cut" />
-        <item itemvalue="Python.Testing (1)" />
-        <item itemvalue="Python.Contour_Detect_Function" />
-        <item itemvalue="Python.Test_For_Contour_Matching" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569234186370</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Most Crucial Update">
+      <created>1569376286333</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569376286333</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
